@@ -1,0 +1,88 @@
+html, body, h1, h2, h3, h4, h5, h6, p, div, nav, article, ol, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content {
+    margin: 50px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #eee;
+}
+
+#content h1{
+    padding: 10px;
+}
+
+#content .product, #content #darkModeButton{
+    margin: 10px;
+    display: flex;
+    border-radius: 7px;
+    border: 2px solid black;
+}
+
+.product {
+    width: auto;
+    align-items: center;
+
+}
+
+.product span {
+    padding: auto 0 auto 0;
+    width: 0;
+}
+.product .name {
+    margin: 16px 0 16px 16px;
+    min-width: 100px;
+    flex-grow: 2;
+}
+.product .price {
+    margin: 16px 0;
+    min-width: 50px;
+    flex-grow: 3;
+}
+.product .details {
+    margin: 16px 16px 16px 0;
+    min-width: 100px;
+    flex-grow: 6;
+}
+
+#content .product{
+    background-color: #ddd;
+}
+
+#content .product, #content #darkModeButton{
+    border-color: black;
+}
+
+#darkModeButton {
+    width: 110.24px;
+}
+#darkModeButton span{
+    margin: 16px;
+}
+#darkModeButton:hover{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.dark{
+    background-color: #111;
+    color: white;
+}
+.dark #content{
+    background-color: #333;
+}
+.dark #content .product, .dark #content #darkModeButton{
+    border-color: white;
+}
+
+.dark #content .product{
+    background-color: #444;
+}
+.dark #darkModeButton:hover{
+    color: black;
+    background-color: white;
+}
